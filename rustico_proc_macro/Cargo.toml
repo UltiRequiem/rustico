@@ -1,5 +1,11 @@
 [package]
 name = "rustico"
+description = "Rust programming, in Spanish."
+license = "MIT"
+homepage = "https://github.com/UltiRequiem/rustico"
+keywords = ["spanish"]
+authors = ["UltiRequiem"]
+categories = ["fun"]
 version = "0.1.0"
 edition = "2018"
 
