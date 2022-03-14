@@ -1,6 +1,7 @@
 [package]
 name = "rustico"
 description = "Rust programming, in Spanish."
+readme = "../readme.md"
 license = "MIT"
 homepage = "https://github.com/UltiRequiem/rustico"
 keywords = ["spanish"]
