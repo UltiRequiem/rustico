@@ -1,11 +1,11 @@
-# rostico
+# rustico
 
 ![Para divertirme](./para_divertirme.png)
 
 > Doing it for the fun. [Original Video](https://youtu.be/v3rOpmlpFsM)
 
 Aren't you _cansado_ from writting Rust Programs in English? Do you like saying
-"chales" a lot? Would you like to try something different, in an exotic and
+_"chales"_ a lot? Would you like to try something different, in an exotic and
 funny-sounding language?
 
 **rustico** (Spanish for Rust) is here to save your day, as it allows you to
