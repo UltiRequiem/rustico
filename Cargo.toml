@@ -1,5 +1,5 @@
 [workspace]
 members = [
-    "rustico_proc_macro",
+    "rustico",
     "examples"
 ]
