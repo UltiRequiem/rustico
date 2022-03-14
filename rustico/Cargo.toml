@@ -6,7 +6,7 @@ license = "MIT"
 homepage = "https://github.com/UltiRequiem/rustico"
 keywords = ["spanish"]
 authors = ["UltiRequiem"]
-categories = ["fun"]
+categories = ["acessability"]
 version = "0.1.1"
 edition = "2018"
 
