@@ -1,6 +1,6 @@
 # rustico
 
-![Para divertirme](./para_divertirme.png)
+![Para divertirme](https://raw.githubusercontent.com/UltiRequiem/rustico/e9e5c1c50f566f1946d9e506bb501b2e78cb551c/para_divertirme.png)
 
 > [Doing it for the fun.](https://youtu.be/v3rOpmlpFsM)
 
