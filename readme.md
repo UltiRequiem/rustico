@@ -2,7 +2,7 @@
 
 ![Para divertirme](./para_divertirme.png)
 
-> Doing it for the fun. [Original Video](https://youtu.be/v3rOpmlpFsM)
+> [Doing it for the fun.](https://youtu.be/v3rOpmlpFsM)
 
 Aren't you _cansado_ from writting Rust Programs in English? Do you like saying
 _"chales"_ a lot? Would you like to try something different, in an exotic and
@@ -15,13 +15,13 @@ You are from Costa Rica and don't feel as ease using only Spanish Words? Don't
 Worry! Rustico if fully compatible English-Rust, you can mix both at your
 convenience.
 
-## Install
+## instalacion
 
 ```sh
 cargo install rustico
 ```
 
-## Usage
+## uso
 
 Here 's an exmple of what can be achieved with Rustico.
 
@@ -48,14 +48,12 @@ rustico::rustico! {
 
 Check [`examples/`](./examples) for more.
 
-## Docs
-
-TODO: Check [#1](https://github.com/UltiRequiem/rustico/issues/1)
+## documentacion
 
 For now you can see [`rustico/src/lib.rs`](./rustico/src/lib.rs) for all the
 vocabulary.
 
-## Contribuyendo
+## contribuyendo
 
 First of all, _Piolisimo_ that you want to participate in this joke! To add
 words is just neccesary to modify [`rustico/src/lib.rs`](./rustico/src/lib.rs).
@@ -66,11 +64,11 @@ words is just neccesary to modify [`rustico/src/lib.rs`](./rustico/src/lib.rs).
 
 - los hahas
 
-## Gracias
+## gracias
 
 [Benjamin Bouvier](https://github.com/bnjbvr) for the original French
 implementation.
 
-## La licencia
+## licencia
 
-Licensed under the MIT License.
+Licensed under the MIT License 📄
