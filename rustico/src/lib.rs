@@ -59,15 +59,15 @@ fn replace_ident(ident: Ident) -> Option<TokenTree> {
         "sino" => "else",
         "yo" => "self",
         "deja" => "let",
-        "statico" => "static",
-        "structura" => "struct",
+        "estatico" => "static",
+        "estructura" => "struct",
         "confia" => "expect",
         "mientras" => "while",
         "usando" => "use",
         "dentro_de" => "into",
         "verdad" => "true",
         "enumerado" => "enum",
-
+        "Rasgo" => "Trait"
         _ => &ident_str,
     };
 
