@@ -23,7 +23,7 @@ cargo install rustico
 
 ## uso
 
-Here's an exmple of what can be achieved with Rustico.
+Here's an example of what can be achieved with Rustico.
 
 ```rust
 rustico::rustico! {
