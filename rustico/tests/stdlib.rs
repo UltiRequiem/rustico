@@ -4,7 +4,7 @@
 fn test_std_imports() {
     rustico::rustico! {
         usar estd::colecciones::Diccionario;
-        
+
         función crear_diccionario() -> Diccionario<Cadena, e32> {
             sea mutable mapa = Diccionario::nuevo();
             mapa.insertar(Cadena::desde("uno"), 1);
@@ -12,7 +12,7 @@ fn test_std_imports() {
             mapa
         }
     }
-    
+
     let mapa = crear_diccionario();
     assert_eq!(mapa.get("uno"), Some(&1));
     assert_eq!(mapa.get("dos"), Some(&2));
@@ -22,7 +22,7 @@ fn test_std_imports() {
 fn test_hashset_imports() {
     rustico::rustico! {
         usar estd::colecciones::Conjunto;
-        
+
         función crear_conjunto() -> Conjunto<e32> {
             sea mutable set = Conjunto::nuevo();
             set.insertar(1);
@@ -31,7 +31,7 @@ fn test_hashset_imports() {
             set
         }
     }
-    
+
     let set = crear_conjunto();
     assert!(set.contains(&1));
     assert!(set.contains(&2));
@@ -50,7 +50,7 @@ fn test_vec_type() {
             v
         }
     }
-    
+
     let v = crear_vector();
     assert_eq!(v.len(), 3);
     assert_eq!(v[0], 1);
@@ -65,7 +65,7 @@ fn test_box_type() {
             Caja::nuevo(42)
         }
     }
-    
+
     let boxed = crear_caja();
     assert_eq!(*boxed, 42);
 }

@@ -7,12 +7,12 @@ fn test_struct_definition() {
             x: e32,
             y: e32,
         }
-        
+
         función crear_punto() -> Punto {
             Punto { x: 10, y: 20 }
         }
     }
-    
+
     let p = crear_punto();
     assert_eq!(p.x, 10);
     assert_eq!(p.y, 20);
@@ -25,18 +25,18 @@ fn test_impl_methods() {
             ancho: e32,
             alto: e32,
         }
-        
+
         implementa Rectangulo {
             función nuevo(ancho: e32, alto: e32) -> Rectangulo {
                 Rectangulo { ancho, alto }
             }
-            
+
             función area(&yo) -> e32 {
                 yo.ancho * yo.alto
             }
         }
     }
-    
+
     let rect = Rectangulo::new(5, 10);
     assert_eq!(rect.area(), 50);
 }
@@ -47,12 +47,12 @@ fn test_pub_struct() {
         púb estructura Publico {
             púb campo: e32,
         }
-        
+
         función crear_publico() -> Publico {
             Publico { campo: 42 }
         }
     }
-    
+
     let p = crear_publico();
     assert_eq!(p.campo, 42);
 }
@@ -65,12 +65,12 @@ fn test_enum_definition() {
             Verde,
             Azul,
         }
-        
+
         función obtener_color() -> Color {
             Color::Rojo
         }
     }
-    
+
     let _ = obtener_color();
 }
 
@@ -81,7 +81,7 @@ fn test_enum_with_values() {
             Texto(Cadena),
             Numero(e32),
         }
-        
+
         función procesar_mensaje(msg: Mensaje) -> e32 {
             machea msg {
                 Mensaje::Numero(n) => n,
@@ -89,7 +89,7 @@ fn test_enum_with_values() {
             }
         }
     }
-    
+
     assert_eq!(procesar_mensaje(Mensaje::Numero(42)), 42);
     assert_eq!(procesar_mensaje(Mensaje::Texto(String::from("hola"))), 0);
 }

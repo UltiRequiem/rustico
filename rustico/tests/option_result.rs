@@ -7,7 +7,7 @@ fn test_option_some() {
             Alguno(42)
         }
     }
-    
+
     assert_eq!(retornar_alguno(), Some(42));
 }
 
@@ -18,7 +18,7 @@ fn test_option_none() {
             Ninguno
         }
     }
-    
+
     assert_eq!(retornar_ninguno(), None);
 }
 
@@ -30,7 +30,7 @@ fn test_option_unwrap() {
             opt.pelar()
         }
     }
-    
+
     assert_eq!(pelar_opcion(), 100);
 }
 
@@ -42,7 +42,7 @@ fn test_option_unwrap_or() {
             opt.pelar_o(50)
         }
     }
-    
+
     assert_eq!(pelar_o_defecto(), 50);
 }
 
@@ -53,7 +53,7 @@ fn test_result_ok() {
             Bien(42)
         }
     }
-    
+
     assert_eq!(retornar_bien(), Ok(42));
 }
 
@@ -64,7 +64,7 @@ fn test_result_err() {
             Error(Cadena::desde("falló"))
         }
     }
-    
+
     assert_eq!(retornar_error(), Err(String::from("falló")));
 }
 
@@ -76,7 +76,7 @@ fn test_result_unwrap() {
             res.pelar()
         }
     }
-    
+
     assert_eq!(pelar_resultado(), 200);
 }
 
@@ -88,7 +88,7 @@ fn test_result_expect() {
             res.confia("debería funcionar")
         }
     }
-    
+
     assert_eq!(confiar_resultado(), 300);
 }
 
@@ -102,7 +102,7 @@ fn test_option_match() {
             }
         }
     }
-    
+
     assert_eq!(procesar_opcion(Some(10)), 20);
     assert_eq!(procesar_opcion(None), 0);
 }
@@ -117,7 +117,7 @@ fn test_result_match() {
             }
         }
     }
-    
+
     assert_eq!(procesar_resultado(Ok(42)), 42);
     assert_eq!(procesar_resultado(Err(String::from("error"))), -1);
 }

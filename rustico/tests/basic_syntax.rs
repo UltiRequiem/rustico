@@ -7,7 +7,7 @@ fn test_basic_function() {
             retorna 42;
         }
     }
-    
+
     assert_eq!(prueba(), 42);
 }
 
@@ -21,7 +21,7 @@ fn test_let_and_mut() {
             retorna y;
         }
     }
-    
+
     assert_eq!(prueba_variables(), 15);
 }
 
@@ -36,7 +36,7 @@ fn test_if_else() {
             }
         }
     }
-    
+
     assert_eq!(prueba_condicional(15), 1);
     assert_eq!(prueba_condicional(5), 0);
 }
@@ -52,7 +52,7 @@ fn test_match() {
             }
         }
     }
-    
+
     assert_eq!(prueba_macheo(1), 10);
     assert_eq!(prueba_macheo(2), 20);
     assert_eq!(prueba_macheo(99), 0);
@@ -69,7 +69,7 @@ fn test_for_loop() {
             retorna suma;
         }
     }
-    
+
     assert_eq!(prueba_bucle_para(), 10);
 }
 
@@ -84,7 +84,7 @@ fn test_while_loop() {
             retorna contador;
         }
     }
-    
+
     assert_eq!(prueba_mientras(), 5);
 }
 
@@ -102,6 +102,6 @@ fn test_loop_and_break() {
             retorna x;
         }
     }
-    
+
     assert_eq!(prueba_bucle_infinito(), 10);
 }
