@@ -1,3 +1,5 @@
+#![allow(dead_code, static_mut_refs)]
+
 rustico::rustico! {
     usar estd::colecciones::Diccionario;
 

@@ -17,7 +17,7 @@ fn test_let_and_mut() {
         función prueba_variables() -> e32 {
             sea x = 5;
             sea mutable y = 10;
-            y = y + x;
+            y += x;
             retorna y;
         }
     }
@@ -64,7 +64,7 @@ fn test_for_loop() {
         función prueba_bucle_para() -> e32 {
             sea mutable suma = 0;
             para i de 0..5 {
-                suma = suma + i;
+                suma += i;
             }
             retorna suma;
         }
@@ -79,7 +79,7 @@ fn test_while_loop() {
         función prueba_mientras() -> e32 {
             sea mutable contador = 0;
             mientras contador < 5 {
-                contador = contador + 1;
+                contador += 1;
             }
             retorna contador;
         }
@@ -94,7 +94,7 @@ fn test_loop_and_break() {
         función prueba_bucle_infinito() -> e32 {
             sea mutable x = 0;
             bucle {
-                x = x + 1;
+                x += 1;
                 si x == 10 {
                     rompe;
                 }

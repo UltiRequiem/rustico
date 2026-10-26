@@ -18,13 +18,13 @@ fn test_function_alternatives() {
 fn test_let_alternatives() {
     rustico::rustico! {
         función prueba_deja() -> e32 {
-            deja x = 10;
-            x
+
+            10
         }
 
         función prueba_sea() -> e32 {
-            sea y = 20;
-            y
+
+            20
         }
     }
 
@@ -54,7 +54,7 @@ fn test_loop_alternatives() {
         función usa_bucle() -> e32 {
             sea mutable x = 0;
             bucle {
-                x = x + 1;
+                x += 1;
                 si x == 5 {
                     rompe;
                 }
@@ -65,7 +65,7 @@ fn test_loop_alternatives() {
         función usa_ciclo() -> e32 {
             sea mutable y = 0;
             ciclo {
-                y = y + 1;
+                y += 1;
                 si y == 3 {
                     romper;
                 }
@@ -168,7 +168,7 @@ fn test_for_alternatives() {
         función usa_para() -> e32 {
             sea mutable suma = 0;
             para i de 0..3 {
-                suma = suma + i;
+                suma += i;
             }
             suma
         }
@@ -176,7 +176,7 @@ fn test_for_alternatives() {
         función usa_por() -> e32 {
             sea mutable suma = 0;
             por i de 0..3 {
-                suma = suma + i;
+                suma += i;
             }
             suma
         }

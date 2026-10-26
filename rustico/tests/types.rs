@@ -42,8 +42,8 @@ fn test_bool_type() {
         }
     }
 
-    assert_eq!(es_verdadero(), true);
-    assert_eq!(es_falso(), false);
+    assert!(es_verdadero());
+    assert!(!es_falso());
 }
 
 #[test]
