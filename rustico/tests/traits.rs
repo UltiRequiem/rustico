@@ -1,3 +1,5 @@
+#![allow(dead_code, static_mut_refs)]
+
 // Test trait definitions and implementations
 
 #[test]
@@ -66,7 +68,7 @@ fn test_self_reference() {
 
         implementa Contador {
             función incrementar(&mutable yo) {
-                yo.valor = yo.valor + 1;
+                yo.valor += 1;
             }
 
             función obtener_valor(&mismo) -> e32 {
